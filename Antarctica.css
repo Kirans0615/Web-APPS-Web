@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: "Hubot Sans", sans-serif;
+    background-color: #f7f8fc;
+    color: #1c1c1c;
+}
+header {
+    background-color: #031330;
+    color: white;
+    padding: 6px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  header .brand-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  header .logo {
+    width: 22px;
+    height: 22px;
+  }
+  
+  header .brand-name {
+    font-weight: 800;
+    font-size: 1.1em;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95em;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+nav {
+    background: #031330;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+a:hover {
+    color: #d1e0ff;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    margin-right: 8px;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(to bottom right, #cce7ff, #a7c6e8);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay {
+    background: rgba(3, 19, 48, 0.8);
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 40px 0 10px 0;
+    color: #031330;
+}
+
+.no-listings {
+    text-align: center;
+    background-color: white;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px #ccc;
+}
+
+.no-listings p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #031330;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #0d42c5;
+}
+
+footer {
+    background-color: #031330;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8rem;
+}

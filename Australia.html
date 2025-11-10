@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Real Estate Hub (GRH)</title>
+  <link rel="stylesheet" href="/location_pages/Australia.css" />
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Hubot+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<body>
+
+    <header>
+        <div class="brand">
+          <a href="index.html" class="brand-link" aria-label="GRH Home">
+            <img src="/logo.png" alt="GRH logo" class="logo" />
+            <span class="brand-name">GRH</span>
+          </a>
+        </div>
+    
+        <nav>
+          <ul>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/listing.html">Listings</a></li>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="/index.html">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Explore Our Properties in <i>Australia</i></h1>
+            <p>From the bustling streets of Sydney to the calm shores of Perth — find your dream home down under.</p>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Available Listings</h2>
+
+        <div class="property-grid">
+
+            <div class="property-card">
+                <img src="/images/sydney.jpg" alt="Apartment in Sydney" width="100%" class="property-image">
+                <div class="property-info">
+                    <h3>Luxury Apartment in Sydney</h3>
+                    <p>Enjoy panoramic views of the Sydney Opera House and Harbour Bridge. 3 bed · 2 bath.</p>
+                    <p class="price">$1,950,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/melbourne.jpg" alt="Townhouse in Melbourne" width="100%" class="property-image">
+                <div class="property-info">
+                    <h3>Modern Townhouse in Melbourne</h3>
+                    <p>Located near vibrant cafes and cultural hotspots, this spacious townhouse offers urban comfort.</p>
+                    <p class="price">$780,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/brisbane.jpg" alt="Villa in Brisbane" width="100%" class="property-image">
+                <div class="property-info">
+                    <h3>Suburban Villa in Brisbane</h3>
+                    <p>Perfect for families — featuring a large garden, modern design, and proximity to schools.</p>
+                    <p class="price">$950,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/perth.jpg" alt="Beach House in Perth" width="100%" class="property-image">
+                <div class="property-info">
+                    <h3>Coastal House in Perth</h3>
+                    <p>Wake up to ocean waves with this open-concept home steps from the beach.</p>
+                    <p class="price">$1,400,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> GRH — Global Real Estate Holdings</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

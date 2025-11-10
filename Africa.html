@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Real Estate Hub (GRH)</title>
+  <link rel="stylesheet" href="/location_pages/Africa.css" />
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Hubot+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <a href="/index.html" class="brand-link" aria-label="GRH Home">
+        <img src="/logo.png" alt="GRH logo" class="logo" />
+        <span class="brand-name">GRH</span>
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="/contact.html">Contact Us</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/listing.html">Listings</a></li>
+        <li><a href="/aboutus.html">About Us</a></li>
+        <li><a href="/index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Explore Our Properties in <i>Africa</i></h1>
+            <p>From coastal villas to modern city apartments; find your perfect home</p>
+        </div>
+    </header>
+
+    <!-- Property Listings -->
+    <main>
+        <h2 class="section-title">Available Listings</h2>
+
+        <div class="property-grid">
+
+            <div class="property-card">
+                <img src="/images/capetown.jpg" alt="Villa in Cape Town" width="100%"class= "property-image">
+                <div class="property-info">
+                    <h3>Villa in Cape Town</h3>
+                    <p>Overlooking the Atlantic Ocean with a private pool and modern architecture. 4 bed · 3 bath.</p>
+                    <p class="price">$2,500,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/nairobi.jpeg" alt="Villa in Cape Town" width="95%"class= "property-image">
+                <div class="property-info">
+                    <h3>Modern Apartment in Nairobi</h3>
+                    <p>Located in the heart of the city, featuring a gated community with gym access and 24/7 security.</p>
+                    <p class="price">$420,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/zanzibar.jpeg" alt="Villa in Cape Town" width="120%"class= "property-image">
+                <div class="property-info">
+                    <h3>Beachfront House in Zanzibar</h3>
+                    <p>Steps away from the Indian Ocean, this serene location offers unmatched privacy and amazing views.</p>
+                    <p class="price">$850,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/kenya.jpg" alt="Villa in Cape Town" width="120%"class= "property-image">
+                <div class="property-info">
+                    <h3>Safari Lodge in Kenya</h3>
+                    <p>Experience wildlife luxury living with eco-friendly design and a comfortable local neighborhood.</p>
+                    <p class="price">$1,100,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> GRH — Global Real Estate Holdings</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear(); /* Here, I used javascript to make it so that the year is updated automatically depending on whatever year it currently is*/
+    </script>
+
+</body>
+</html>

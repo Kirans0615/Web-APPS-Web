@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: "Hubot Sans", sans-serif;
+    background-color: #f7f8fc;
+    color: #1c1c1c;
+}
+
+header {
+    background-color: #031330;
+    color: white;
+    padding: 6px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  header .brand-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  header .logo {
+    width: 22px;
+    height: 22px;
+  }
+  
+  header .brand-name {
+    font-weight: 800;
+    font-size: 1.1em;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95em;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+nav {
+    background: #031330;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+a:hover {
+    color: #d1e0ff;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    margin-right: 8px;
+}
+
+.hero {
+    position: relative;
+    background-color: rgb(180, 217, 229); 
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay {
+    background: black;
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 40px 0 20px 0;
+    color: #031330;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));  /*I used this so that the properties show up on a GRID, instead of just laying around stacked on eachother*/
+    gap: 30px;
+    padding: 60px
+}
+
+.property-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px #ccc; /*First value is horizontal offset, which i jsut made it straight down. then is vertical, so i made it do 8px down - then is the blur of it, which i made it 20 cause it looks softest*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.image {
+    height: 220px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.property-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.property-info h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #031330;
+}
+
+.property-info p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+.price {
+    font-weight: bold;
+    color: #0d42c5;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #031330;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer; /*Even made it so that the pointer changes when you hover*/
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0d42c5;
+}
+
+footer {
+    background-color: #031330;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8rem;
+}

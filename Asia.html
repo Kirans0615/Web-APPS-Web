@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Real Estate Hub (GRH)</title>
+  <link rel="stylesheet" href="/location_pages/Asia.css" />
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Hubot+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<body>
+
+    <header>
+        <div class="brand">
+          <a href="index.html" class="brand-link" aria-label="GRH Home">
+            <img src="/logo.png" alt="GRH logo" class="logo" />
+            <span class="brand-name">GRH</span>
+          </a>
+        </div>
+    
+        <nav>
+          <ul>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/listing.html">Listings</a></li>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="/index.html">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Explore Our Properties in <i>Asia</i></h1>
+            <p>Discover breathtaking homes across Asia — from seaside villas in Bali to modern penthouses in Tokyo.</p>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Available Listings</h2>
+
+        <div class="property-grid">
+
+            <div class="property-card">
+                <img src="/images/tokyo.jpeg.avif" alt="Tokyo Apartment" width="100%" class="property-image">
+                <div class="property-info">
+                    <h3>Modern Apartment in Tokyo</h3>
+                    <p>A luxurious apartment located in the heart of Shibuya, close to shopping and dining.</p>
+                    <p class="price">$1,300,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="/images/bali.jpg" alt="Beachfront Villa in Bali" width="100%" class="property-image">
+                <div class="property-info">
+                    <h3>Beachfront Villa in Bali</h3>
+                    <p>Private infinity pool overlooking turquoise waters — perfect for relaxation and retreats.</p>
+                    <p class="price">$2,200,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/dubai.jpg" alt="Luxury Mansion in Dubai" width="100%" class="property-image">
+                <div class="property-info">
+                    <h3>Luxury Mansion in Dubai</h3>
+                    <p>State-of-the-art architecture, skyline views, and exclusive privacy in Dubai Hills.</p>
+                    <p class="price">$5,800,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="/images/singapore.jpeg" alt="High-Rise Condo in Singapore" width="100%" class="property-image">
+                <div class="property-info">
+                    <h3>High-Rise Condo in Singapore</h3>
+                    <p>Modern design with smart home features and a rooftop garden in Marina Bay.</p>
+                    <p class="price">$2,750,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> GRH — Global Real Estate Holdings</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

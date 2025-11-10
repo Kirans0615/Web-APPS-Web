@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Real Estate Hub (GRH)</title>
+  <link rel="stylesheet" href="/location_pages/Europe.css" />
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Hubot+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<body>
+
+    <header>
+        <div class="brand">
+          <a href="index.html" class="brand-link" aria-label="GRH Home">
+            <img src="/logo.png" alt="GRH logo" class="logo" />
+            <span class="brand-name">GRH</span>
+          </a>
+        </div>
+    
+        <nav>
+          <ul>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/listing.html">Listings</a></li>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="/index.html">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Explore Our Properties in <i>Europe</i></h1>
+            <p>From Parisian apartments to Swiss chalets; find the home that suits your lifestyle.</p>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Available Listings</h2>
+
+        <div class="property-grid">
+            <div class="property-card">
+                <img src="/images/paris.jpg.webp.jpeg" alt="Paris Apartment" class="property-image" width="100%">
+                <div class="property-info">
+                    <h3>Apartment in Paris</h3>
+                    <p>Elegant apartment near the Seine with vintage interiors and modern comforts. 2 bed · 2 bath.</p>
+                    <p class="price">$950,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/romevilla.jpg.webp" alt="Rome Villa" class="property-image" width="100%">
+                <div class="property-info">
+                    <h3>Villa in Rome</h3>
+                    <p>Historic villa surrounded by gardens and fountains. Perfect blend of classic and modern living.</p>
+                    <p class="price">$3,100,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/londonflat.jpg" alt="London Flat" class="property-image" width="100%">
+                <div class="property-info">
+                    <h3>Flat in London</h3>
+                    <p>Luxury flat in the heart of Kensington, walking distance to Hyde Park. 3 bed · 2 bath.</p>
+                    <p class="price">$1,750,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/swisschalet.jpg" alt="Swiss Chalet" class="property-image" width="100%">
+                <div class="property-info">
+                    <h3>Chalet in Switzerland</h3>
+                    <p>Alpine retreat with breathtaking mountain views, wood finishes, and cozy fireplaces.</p>
+                    <p class="price">$2,200,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> GRH — Global Real Estate Holdings</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

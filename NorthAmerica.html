@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Real Estate Hub (GRH)</title>
+  <link rel="stylesheet" href="/location_pages/NorthAmerica.css" />
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Hubot+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+<body>
+
+    <header>
+        <div class="brand">
+          <a href="index.html" class="brand-link" aria-label="GRH Home">
+            <img src="/logo.png" alt="GRH logo" class="logo" />
+            <span class="brand-name">GRH</span>
+          </a>
+        </div>
+    
+        <nav>
+          <ul>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="/listing.html">Listings</a></li>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="/index.html">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Explore Our Properties in <i>North America</i></h1>
+            <p>From New York penthouses to California villas — discover the best of modern living.</p>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Available Listings</h2>
+
+        <div class="property-grid">
+            <div class="property-card">
+                <img src="/images/nyc.jpg.webp" alt="New York Penthouse" class="property-image" width="100%">
+                <div class="property-info">
+                    <h3>Penthouse in New York City</h3>
+                    <p>Overlooking Central Park, floor-to-ceiling windows and modern open concept design.</p>
+                    <p class="price">$4,800,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/miami.jpg.webp" alt="Miami Villa" class="property-image" width="100%">
+                <div class="property-info">
+                    <h3>Villa in Miami</h3>
+                    <p>Beachfront property with private dock, infinity pool, and tropical landscaping.</p>
+                    <p class="price">$3,250,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/toronto.jpg.avif" alt="Toronto Condo" class="property-image" width="100%">
+                <div class="property-info">
+                    <h3>Condo in Toronto</h3>
+                    <p>Downtown high-rise unit with panoramic skyline views and full amenities access.</p>
+                    <p class="price">$890,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="/images/losangeles.jpg.webp" alt="Los Angeles Mansion" class="property-image" width="100%">
+                <div class="property-info">
+                    <h3>Mansion in Los Angeles</h3>
+                    <p>Luxurious Beverly Hills estate with pool, theater, and private courtyard.</p>
+                    <p class="price">$6,400,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> GRH — Global Real Estate Holdings</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
