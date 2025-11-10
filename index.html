@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Real Estate Hub (GRH)</title>
+  <link rel="stylesheet" href="HOMEstyles.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Hubot+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <a href="index.html" class="brand-link" aria-label="GRH Home">
+        <img src="logo.png" alt="GRH logo" class="logo" />
+        <span class="brand-name">GRH</span>
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="/listing.html">Listings</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="/index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-section" role="banner" aria-label="GRH Hero">
+    <div class="background-image"></div>
+
+    <div class="overlay-text">
+      <h1>Global Real Estate Hub</h1>
+      <h2>
+        <span id="sellSmart" class="dynamic-weight">Sell Smart</span>,
+        <span id="buySmart" class="dynamic-weight">Buy Smart</span>,
+        <span id="growSmart" class="dynamic-weight">Grow Smart</span>. Discover a new way with GRH.
+      </h2>
+    </div>
+
+    <div class="button-container">
+      <button onclick="location.href='/listing.html'">Listings</button>
+      <div class="separator"></div>
+      <button onclick="location.href='/faq.html'">FAQ</button>
+      <div class="separator"></div>
+      <button onclick="location.href='/aboutus.html'">About Us</button>
+      <div class="separator"></div>
+      <button onclick="location.href='/contact.html'">Contat Us</button>
+    </div>
+  </section>
+
+  <section class="property-gallery" aria-labelledby="featured-properties-heading">
+    <h2 id="featured-properties-heading">Featured Properties</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="property-slide-card sold">
+            <div class="swiper inner-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="/india.jpg">
+                    <img src="/india.jpg" alt="8010 Holly Lane photo 1"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide-info">
+              <h3>317/318, Bakor Patel Chamber</h3>
+              <p class="status sold">Sold</p>
+              <p>$1,000,000 • 6 Bed • 7 Bath</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="property-slide-card sold">
+            <div class="swiper inner-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="/florida.jpg" >
+                    <img src="/florida.jpg" alt="1408 SW 8th Street, Apt 10A Miami, FL 33135"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide-info">
+              <h3>1408 SW 8th Street, Apt 10A Miami, FL 33135</h3>
+              <p class="status sold">Sold</p>
+              <p>$5,600,000 • 8 Bed • 5 Bath</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="property-slide-card for-sale">
+            <div class="swiper inner-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="/europe.jpg" >
+                    <img src="/europe.jpg" alt="Prinsengracht 71-III 1016 GR Amsterdam"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slide-info">
+              <h3>Prinsengracht 71-III 1016 GR Amsterdam</h3>
+              <p class="status for-sale">For Sale</p>
+              <p>$3,000,000 • 10 bed • 5 bath</p>
+            </div>
+          </div>
+        </div> 
+
+      <div class="swiper-button-prev" aria-label="Previous"></div>
+      <div class="swiper-button-next" aria-label="Next"></div>
+    </div>
+  </section>
+
+  <section class="quote-section" aria-labelledby="quote-heading">
+    <h1 id="quote-heading">Find Out How Much Your Home May Be Worth Now</h1>
+    <p>Enter your property details below to receive an instant estimate, or contact us for a more detailed assessment.</p>
+
+    <form id="home-value-form" class="quote-form">
+      <div class="form-row">
+        <input type="text" id="fullName" name="fullName" placeholder="Full Name" style="height: 30px; margin-top: 50px;" required />
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" style="height: 30px; margin-top: 50px;" required />
+      </div>
+    
+      <div class="form-row">
+        <input type="text" id="streetAddress" name="streetAddress" placeholder="Street Address" style="height: 30px; margin-top: 14px;" required />
+        <input type="text" id="city" name="city" placeholder="City" style="height: 30px; margin-top: 14px;" required />
+      </div>
+    
+      <div class="form-row">
+        <select id="state" name="state" style="height: 35px; width: 470px; margin-top: 14px;" required>
+          <option value="">Select State</option>
+          <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option>
+          <option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option>
+          <option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option>
+          <option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option>
+          <option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option><option value="WY">Wyoming</option>
+        </select>
+        <input type="text" id="zipCode" name="zipCode" placeholder="Zip Code" style="height: 35px; margin-left: 10px; margin-top: 14px" required />
+      </div>
+    
+      <select name="foundUs" id="foundUs" style="height: 35px; margin-top: 4px;" required>
+        <option value="">How did you find us?</option>
+        <option value="google">Google</option>
+        <option value="facebook">Social Media</option>
+        <option value="friend">Referral</option>
+        <option value="other">Other</option>
+      </select>
+    
+      <button type="submit">GET A FREE QUOTE</button>
+    </form>
+    
+    <style>
+      .form-success { color:#fff; margin-top:16px; text-align:center; }
+    </style>
+    
+    <script>
+      const form = document.getElementById('home-value-form');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault(); 
+    
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+    
+        setTimeout(() => {
+          form.outerHTML = '<p class="form-success">Thanks. Your request has been sent to our team.</p>';
+        }, 600);
+      });
+    </script>
+    
+
+  <section class="services" aria-labelledby="services-heading">
+    <h1 id="services-heading">List Your Home on Your Terms</h1>
+    <div class="services__container">
+      <div class="services__card">
+        <h2>How We Work</h2>
+        <p>Reputable Partners</p>
+        <a href="/listing.html" target="_blank" rel="noopener">
+          <button>Get a Cash Offer Today</button>
+        </a>
+      </div>
+
+      <div class="services__card">
+        <h2>Empowering The Community One Property At a Time</h2>
+        <p>Testimonials</p>
+        <a href="/aboutus.html" target="_blank" rel="noopener">
+          <button>Learn More About Us</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer__container" aria-label="Footer">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2>
+          <a href="/aboutus.html">How We Work</a>
+          <a href="/">Terms of Service</a>
+        </div>
+
+        <div class="footer__link--items">
+          <h2>Contact Us</h2>
+          <a href="/www.gmail.com" target="_blank" rel="noopener">Email</a>
+          <a href="/www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="/www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo" aria-label="GRH Home">
+            <img src="logo.png" alt="GRH logo" style="height: 50px; width: auto;"/>
+            <span class="sr-only">Global Real Estate Hub</span>
+          </a>
+        </div>
+
+        <p class="website__rights">© GRH 2025. All Rights Reserved</p>
+
+        <div class="social__icons">
+          <a href="https://www.instagram.com/empowerestatesnetwork/" class="social__icon--link" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/empower-estates-network/" class="social__icon--link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const outerSwiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+        },
+        speed: 2000,
+        slidesPerView: 2,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+          1024: { slidesPerView: 2, spaceBetween: 30 },
+          768: { slidesPerView: 1.5, spaceBetween: 20 },
+          480: { slidesPerView: 1.1, spaceBetween: 15 },
+          0: { slidesPerView: 1, spaceBetween: 10 }
+        }
+      });
+      document.querySelectorAll(".inner-swiper").forEach(function (container) {
+        new Swiper(container, {
+          loop: true,
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+          },
+          speed: 700,
+          slidesPerView: 1,
+          allowTouchMove: true
+        });
+      });
+      const toggle = document.getElementById("mobile-menu");
+      const menu = document.getElementById("primary-menu");
+      if (toggle && menu) {
+        toggle.addEventListener("click", function () {
+          const expanded = this.getAttribute("aria-expanded") === "true";
+          this.setAttribute("aria-expanded", String(!expanded));
+          menu.classList.toggle("is-open");
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GRH | Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="icon" href="/logo.png" type="image/png" />
+  <link rel="stylesheet" href="contact.css" />
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <a href="index.html" class="brand-link" aria-label="GRH Home">
+        <img src="logo.png" alt="GRH logo" class="logo">
+        <span class="brand-name">GRH</span>
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="bg bg-a"></div>
+  <div class="bg bg-b"></div>
+
+  <main>
+    <div class="content-box">
+      <h1>Contact GRH</h1>
+      <p class="subtitle">We’ll connect you with a global advisor within one business day.</p>
+
+      <section class="grid">
+        <div class="form-wrap">
+          <h2>Send us a message</h2>
+
+          <form id="contactForm" action="#" method="post" novalidate>
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 202 555 0123" />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" id="sendBtn">Send</button>
+            <p id="thanks" class="thanks">Thanks—our team will reach out shortly.</p>
+          </form>
+        </div>
+
+        <div class="info">
+          <h2>Global Offices</h2>
+          <p><strong>North America:</strong> New York, Miami, Los Angeles</p>
+          <p><strong>Europe:</strong> London, Madrid, Paris, Milan</p>
+          <p><strong>APAC:</strong> Hong Kong, Singapore, Sydney</p>
+
+          <h2>General Inquiries</h2>
+          <p>Email: <a href="mailto:advisors@grh.global">advisors@grh.global</a></p>
+          <p>Phone: +1 (202) 555-0148</p>
+
+          <h2>Prefer a quick start?</h2>
+          <p>Tell us your preferred city, budget, and timeline—we’ll curate a shortlist for you.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer__container" aria-label="Footer">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2>
+          <a href="/aboutus.html">How We Work</a>
+          <a href="/">Terms of Service</a>
+        </div>
+
+        <div class="footer__link--items">
+          <h2>Contact Us</h2>
+          <a href="/www.gmail.com" target="_blank" rel="noopener">Email</a>
+          <a href="/www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="/www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo" aria-label="GRH Home">
+            <img src="logo.png" alt="GRH logo" style="height: 50px; width: auto;"/>
+            <span class="sr-only">Global Real Estate Hub</span>
+          </a>
+        </div>
+
+        <p class="website__rights">© GRH 2025. All Rights Reserved</p>
+
+        <div class="social__icons">
+          <a href="https://www.instagram.com/empowerestatesnetwork/" class="social__icon--link" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/empower-estates-network/" class="social__icon--link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    $(function () {
+      $("#year").text(new Date().getFullYear());
+
+      var photos = ["contact1.jpg","contact2.jpg","contact3.jpg","contact4.jpg","contact5.jpg"];
+      var a = $(".bg-a"), b = $(".bg-b");
+      var i = 0, showingA = true;
+      a.css("background-image", "url(" + photos[0] + ")");
+      b.css("background-image", "url(" + photos[1] + ")").hide();
+      i = 1;
+      setInterval(function () {
+        i = (i + 1) % photos.length;
+        if (showingA) { b.css("background-image","url("+photos[i]+")").fadeIn(1500); a.fadeOut(1500); }
+        else { a.css("background-image","url("+photos[i]+")").fadeIn(1500); b.fadeOut(1500); }
+        showingA = !showingA;
+      }, 6000);
+
+      $("#message").on("input", function () {
+        this.style.height = "auto";
+        this.style.height = (this.scrollHeight) + "px";
+      });
+
+      $("#contactForm").on("submit", function (e) {
+        e.preventDefault();
+        $("#thanks").hide().fadeIn(600);
+      });
+    });
+  </script>
+</body>
+</html>
